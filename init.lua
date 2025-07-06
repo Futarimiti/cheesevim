@@ -38,7 +38,6 @@ vim.o.relativenumber = true
 vim.o.numberwidth = 1
 vim.o.cursorline = true
 
-require("catppuccin").setup()
 local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<C-p>", builtin.find_files, {})
 vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
@@ -57,4 +56,3 @@ require("notify")("hello guy", "info", {
 })
 
 vim.opt.confirm = true
-require("config.lualine")
